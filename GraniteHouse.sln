@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraniteHouse", "GraniteHouse\GraniteHouse.csproj", "{C954480E-CF03-46BB-9D4E-42095A0B657E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C954480E-CF03-46BB-9D4E-42095A0B657E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C954480E-CF03-46BB-9D4E-42095A0B657E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C954480E-CF03-46BB-9D4E-42095A0B657E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C954480E-CF03-46BB-9D4E-42095A0B657E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D10C8813-2666-47AF-AE77-7EA5B819E036}
+	EndGlobalSection
+EndGlobal

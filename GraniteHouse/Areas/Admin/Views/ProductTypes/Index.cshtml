@@ -1,0 +1,51 @@
+﻿@model IEnumerable<GraniteHouse.Models.ProductTypes>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<br /><br />
+      <div class="row">
+          <div class="col-6">
+              <h2 class="text-info"> Product Type List</h2>
+          </div>
+          <div class="col-6 text-right">
+              <a asp-action="Create" class="btn btn-info"><i class="fas fa-plus"></i>&nbsp; New Product Type</a>
+          </div>
+      </div>
+<br />
+<table class="table table-striped border">
+    <thead class="table-info">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td style="width:150px">
+                <div class="btn-group" role="group">
+                    <a type="button" class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                    <a type="button" class="btn btn-success" asp-action="Details" asp-route-id="@item.Id">
+                        <i class="fas fa-list-alt"></i>
+                    </a>
+                    <a type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">
+                        <i class="fas fa-trash-alt"></i>
+                    </a>
+                </div>
+            </td>
+                @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+                @*<partial name="_TableButtonPartial" model="item.Id"/>*@
+        </tr>
+}
+    </tbody>
+</table>
