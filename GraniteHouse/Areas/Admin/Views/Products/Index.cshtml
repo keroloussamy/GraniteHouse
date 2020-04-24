@@ -44,13 +44,16 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Price)
+                @String.Format("{0:c}", item.Price)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Available)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ProductTypes.Name)
+                @if (!item.SpecialTags.Name.Equals("--None--"))
+                {
+                    @Html.DisplayFor(m => item.SpecialTags.Name)
+                }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.SpecialTags.Name)
