@@ -50,13 +50,13 @@
                 @Html.DisplayFor(modelItem => item.Available)
             </td>
             <td>
+                @Html.DisplayFor(m => item.ProductTypes.Name)
+            </td>
+            <td>
                 @if (!item.SpecialTags.Name.Equals("--None--"))
                 {
                     @Html.DisplayFor(m => item.SpecialTags.Name)
                 }
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SpecialTags.Name)
             </td>
 
             <td style="width:150px">
