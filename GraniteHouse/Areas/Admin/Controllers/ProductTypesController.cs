@@ -7,9 +7,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GraniteHouse.Data;
 using GraniteHouse.Models;
+using GraniteHouse.Utility;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GraniteHouse.Areas.Admin.Controllers
 {
+    [Authorize(Roles = StaticDetails.SuperAdmin)]
     [Area("Admin")]
     [Route("Admin/[controller]/[action]")]
     public class ProductTypesController : Controller
